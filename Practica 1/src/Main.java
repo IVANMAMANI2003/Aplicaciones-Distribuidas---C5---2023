@@ -156,8 +156,23 @@ public class Main {
         pasajeS3.add("Eliascha");
 
         long tiempoInicio = System.nanoTime();
+        for(int i=0;i<pasajeS1.size();i++)
+        {
+            System.out.println();
+            System.out.print(pasajeS1.get(i));
+        }
         tamaño1=pasajeS1.size();
+        for(int i=0;i<pasajeS2.size();i++)
+        {
+            System.out.println();
+            System.out.print(pasajeS2.get(i));
+        }
         tamaño2=pasajeS2.size();
+        for(int i=0;i<pasajeS3.size();i++)
+        {
+            System.out.println();
+            System.out.print(pasajeS3.get(i));
+        }
         tamaño3=pasajeS3.size();
 
         System.out.println();
@@ -171,9 +186,11 @@ public class Main {
 
 
         tiempoInicio = System.nanoTime();
-
+        pasajeS1.stream().parallel().forEach(s -> System.out.println(s));
         tamaño1=pasajeS1.size();
+        pasajeS2.stream().parallel().forEach(s -> System.out.println(s));
         tamaño2=pasajeS2.size();
+        pasajeS3.stream().parallel().forEach(s -> System.out.println(s));
         tamaño3=pasajeS3.size();
 
         System.out.println();
