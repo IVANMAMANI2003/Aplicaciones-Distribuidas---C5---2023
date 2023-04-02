@@ -81,53 +81,8 @@ public class Main {
         pasajeS2.add("Daniel Alexis");
         pasajeS1.add("Alex");
         pasajeS3.add("Armando");
-        pasajeS3.add("Elias");pasajeS1.add("Juan");
-        pasajeS1.add("Pedro");
-        pasajeS2.add("Lucas");
-        pasajeS1.add("Juan");
-        pasajeS3.add("Manuel");
-        pasajeS2.add("David");
-        pasajeS1.add("Ester");
-        pasajeS2.add("Marisel");
-        pasajeS2.add("Daniel");
-        pasajeS1.add("Javier");
-        pasajeS3.add("Jose");
-        pasajeS3.add("Ayde");
-        pasajeS1.add("Juan Lucas");
-        pasajeS1.add("Pablo");
-        pasajeS2.add("Lidia");
-        pasajeS1.add("Cesar");
-        pasajeS3.add("Julio");
-        pasajeS2.add("Yovana");
-        pasajeS1.add("Mila");
-        pasajeS2.add("Aristoteles");
-        pasajeS2.add("Daniel Alexis");
-        pasajeS1.add("Alex");
-        pasajeS3.add("Armando");
-        pasajeS3.add("Elias");pasajeS1.add("Juan");
-        pasajeS1.add("Pedro");
-        pasajeS2.add("Lucas");
-        pasajeS1.add("Juan");
-        pasajeS3.add("Manuel");
-        pasajeS2.add("David");
-        pasajeS1.add("Ester");
-        pasajeS2.add("Marisel");
-        pasajeS2.add("Daniel");
-        pasajeS1.add("Javier");
-        pasajeS3.add("Jose");
-        pasajeS3.add("Ayde");
-        pasajeS1.add("Juan Lucas");
-        pasajeS1.add("Pablo");
-        pasajeS2.add("Lidia");
-        pasajeS1.add("Cesar");
-        pasajeS3.add("Julio");
-        pasajeS2.add("Yovana");
-        pasajeS1.add("Mila");
-        pasajeS2.add("Aristoteles");
-        pasajeS2.add("Daniel Alexis");
-        pasajeS1.add("Alex");
-        pasajeS3.add("Armando");
-        pasajeS3.add("Elias");pasajeS1.add("Juan");
+        pasajeS3.add("Elias");
+        pasajeS1.add("Juands");
         pasajeS1.add("Pedro");
         pasajeS2.add("Lucas");
         pasajeS1.add("Juan");
@@ -151,8 +106,84 @@ public class Main {
         pasajeS1.add("Alex");
         pasajeS3.add("Armando");
         pasajeS3.add("Elias");
+        pasajeS1.add("Juand");
+        pasajeS1.add("Pedro");
+        pasajeS2.add("Lucas");
+        pasajeS1.add("Juan");
+        pasajeS3.add("Manuel");
+        pasajeS2.add("David");
+        pasajeS1.add("Ester");
+        pasajeS2.add("Marisel");
+        pasajeS2.add("Daniel");
+        pasajeS1.add("Javier");
+        pasajeS3.add("Jose");
+        pasajeS3.add("Ayde");
+        pasajeS1.add("Juan Lucas");
+        pasajeS1.add("Pablo");
+        pasajeS2.add("Lidia");
+        pasajeS1.add("Cesar");
+        pasajeS3.add("Julio");
+        pasajeS2.add("Yovana");
+        pasajeS1.add("Mila");
+        pasajeS2.add("Aristoteles");
+        pasajeS2.add("Daniel Alexis");
+        pasajeS1.add("Alex");
+        pasajeS3.add("Armando");
+        pasajeS3.add("Elias");
+        pasajeS1.add("Juanito");
+        pasajeS1.add("Pedrito");
+        pasajeS2.add("Lupita");
+        pasajeS1.add("Juacito");
+        pasajeS3.add("Matias");
+        pasajeS2.add("Pytter");
+        pasajeS1.add("Estela");
+        pasajeS2.add("Maria");
+        pasajeS2.add("Danielito");
+        pasajeS1.add("Javiercito");
+        pasajeS3.add("Josecito");
+        pasajeS3.add("Aydecita");
+        pasajeS1.add("Juan Lucascha");
+        pasajeS1.add("Pablito");
+        pasajeS2.add("Lida");
+        pasajeS1.add("Cesarcito");
+        pasajeS3.add("Juliocha");
+        pasajeS2.add("Yovanita");
+        pasajeS1.add("Milagros");
+        pasajeS2.add("Arturos");
+        pasajeS2.add("Daniela");
+        pasajeS1.add("Alexa");
+        pasajeS3.add("Armandito");
+        pasajeS3.add("Eliascha");
 
-/*
+        long tiempoInicio = System.nanoTime();
+        tamaño1=pasajeS1.size();
+        tamaño2=pasajeS2.size();
+        tamaño3=pasajeS3.size();
+
+        System.out.println();
+        suma = tamaño1 + tamaño2 + tamaño3;
+        System.out.println(suma);
+        long tiempoFin= System.nanoTime();
+        System.out.println();
+        System.out.println("Diferencia de Tiempo sin programacion paralela =  " + ((tiempoFin-tiempoInicio)));
+
+        System.out.println();
+
+
+        tiempoInicio = System.nanoTime();
+
+        tamaño1=pasajeS1.size();
+        tamaño2=pasajeS2.size();
+        tamaño3=pasajeS3.size();
+
+        System.out.println();
+        suma = tamaño1 + tamaño2 + tamaño3;
+        System.out.println(suma);
+        tiempoFin= System.nanoTime();
+        System.out.println();
+        System.out.println("Diferencia de Tiempo con programacion paralela =  " + ((tiempoFin-tiempoInicio)));
+
+        /*
         for(int i=0;i<pasajeS1.size();i++)
         {
             System.out.println();
@@ -182,46 +213,6 @@ public class Main {
             System.out.println();
             System.out.println("total de pasajes"+ tamaño3);
         }*/
-
-
-        long tiempoInicio = System.nanoTime();
-
-        pasajeS1.stream().forEach(s -> System.out.println(s));
-        tamaño1=pasajeS3.size();
-
-        pasajeS2.stream().forEach(s -> System.out.println(s));
-        tamaño2=pasajeS3.size();
-
-        pasajeS3.stream().forEach(s -> System.out.println(s));
-        tamaño3=pasajeS3.size();
-
-        System.out.println();
-        suma = tamaño1 + tamaño2 + tamaño3;
-        System.out.println(suma);
-        long tiempoFin= System.nanoTime();
-        System.out.println();
-        System.out.println("Diferencia de Tiempo sin programacion paralela =  " + ((tiempoFin-tiempoInicio)));
-
-        System.out.println();
-        System.out.println();
-
-         tiempoInicio = System.nanoTime();
-
-        pasajeS1.stream().parallel().forEach(s -> System.out.println(s));
-        tamaño1=pasajeS3.size();
-
-        pasajeS2.stream().parallel().forEach(s -> System.out.println(s));
-        tamaño2=pasajeS3.size();
-
-        pasajeS3.stream().parallel().forEach(s -> System.out.println(s));
-        tamaño3=pasajeS3.size();
-
-        System.out.println();
-        suma = tamaño1 + tamaño2 + tamaño3;
-        System.out.println(suma);
-        tiempoFin= System.nanoTime();
-        System.out.println();
-        System.out.println("Diferencia de Tiempo con programacion paralela =  " + ((tiempoFin-tiempoInicio)));
         /*
         System.out.println();
         long tiempoInicio = System.nanoTime();
