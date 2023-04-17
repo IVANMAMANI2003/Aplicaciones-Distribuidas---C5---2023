@@ -1,15 +1,22 @@
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         int tamaño1, tamaño2, tamaño3, suma;
         List< String> pasajeS1=new ArrayList<String> ();
         List< String> pasajeS2=new ArrayList<String> ();
         List< String> pasajeS3=new ArrayList<String> ();
+        List< String> pasajeTotal=new ArrayList<String> ();
         pasajeS1.add("Juan");
         pasajeS1.add("Pedro");
         pasajeS2.add("Lucas");
@@ -154,30 +161,14 @@ public class Main {
         pasajeS1.add("Alexa");
         pasajeS3.add("Armandito");
         pasajeS3.add("Eliascha");
-
+/*
         long tiempoInicio = System.nanoTime();
-        for(int i=0;i<pasajeS1.size();i++)
-        {
-            System.out.println();
-            System.out.print(pasajeS1.get(i));
-        }
-        tamaño1=pasajeS1.size();
-        for(int i=0;i<pasajeS2.size();i++)
-        {
-            System.out.println();
-            System.out.print(pasajeS2.get(i));
-        }
-        tamaño2=pasajeS2.size();
-        for(int i=0;i<pasajeS3.size();i++)
-        {
-            System.out.println();
-            System.out.print(pasajeS3.get(i));
-        }
-        tamaño3=pasajeS3.size();
-
+        /*pasajeS1.stream().forEach(s -> System.out.println(s));
         System.out.println();
-        suma = tamaño1 + tamaño2 + tamaño3;
-        System.out.println(suma);
+        pasajeS2.stream().forEach(s -> System.out.println(s));
+        System.out.println();
+        pasajeS1.stream().forEach(s -> System.out.println(s));
+
         long tiempoFin= System.nanoTime();
         System.out.println();
         System.out.println("Diferencia de Tiempo sin programacion paralela =  " + ((tiempoFin-tiempoInicio)));
@@ -186,20 +177,16 @@ public class Main {
 
 
         tiempoInicio = System.nanoTime();
-        pasajeS1.stream().parallel().forEach(s -> System.out.println(s));
+        /*pasajeS1.stream().parallel().forEach(s -> System.out.println(s));
         tamaño1=pasajeS1.size();
         pasajeS2.stream().parallel().forEach(s -> System.out.println(s));
         tamaño2=pasajeS2.size();
-        pasajeS3.stream().parallel().forEach(s -> System.out.println(s));
-        tamaño3=pasajeS3.size();
+        pasajeS1.stream().parallel().forEach(s -> System.out.println(s));
 
-        System.out.println();
-        suma = tamaño1 + tamaño2 + tamaño3;
-        System.out.println(suma);
         tiempoFin= System.nanoTime();
         System.out.println();
         System.out.println("Diferencia de Tiempo con programacion paralela =  " + ((tiempoFin-tiempoInicio)));
-
+*/
         /*
         for(int i=0;i<pasajeS1.size();i++)
         {
@@ -265,10 +252,28 @@ public class Main {
         tiempoInicio = System.nanoTime();
         System.out.println("Paralelo");
         System.out.println();
-        pasajeS1.stream().parallel().forEach(s -> System.out.println(s));
+        pasajes.stream().parallel().forEach(s -> System.out.println(s));
         tiempoFin= System.nanoTime();
         System.out.println();
         System.out.println("Diferencia de Tiempo con programacion paralela =  " + ((tiempoFin-tiempoInicio)));*/
+
+        System.out.println();
+        long tiempoInicio = System.nanoTime();
+        System.out.println("Paralelo");
+        System.out.println();
+        pasajeTotal.stream().parallel().forEach(s -> System.out.println(s);  
+        long tiempoFin= System.nanoTime();
+        System.out.println();
+        System.out.println("Diferencia de Tiempo con programacion paralela =  " + ((tiempoFin-tiempoInicio)));
+    }
+     public void  contarcli(String pasajeS1,
+    String pasajeS2,
+    String pasajeS3) {
+
+
+            System.out.println(pasajeS1 + pasajeS2 + pasajeS3);
+
+
     }
 
 }
