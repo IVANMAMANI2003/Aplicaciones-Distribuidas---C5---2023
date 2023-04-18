@@ -35,7 +35,7 @@ $(function(){
     });
 
     socket.on('new message', function(data){
-        $chat.append('<b>'+`<div class="bg-success p-2 text-white">${data.nick} </div>`+'<b/>: ' + data.msg + '<br/>');
+        $chat.append('<b class=" text-green">'+data.nick+'<b/>: ' + data.msg + '<br/>');
     });
     
     socket.on('usernames', data =>{ //data : arreglos que se obtuvo del servidor
