@@ -1,6 +1,4 @@
 package com.upeu.catalogo.controller;
-
-
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
